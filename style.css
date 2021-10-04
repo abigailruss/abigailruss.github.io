@@ -23,13 +23,12 @@ p {
     padding-right: 15px;
 }
 
-img {
+.slideshow img {
     width: 70vw;
     height: auto;
     margin:auto;
 }
-.slideshow{
-}
+
 .header ul{
     list-style-type: none;
     margin: 0;
@@ -39,7 +38,9 @@ img {
 .header li{
     float: left;
     padding-right: 5px;
+    padding-left: 5px;
 }
 .header li::after{
-    content: "|"
+    content: "|";
+    margin-left: 10px;
 }

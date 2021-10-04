@@ -23,10 +23,14 @@ p {
     padding-right: 15px;
 }
 
+.slideshow{
+    width:70vw;
+    margin:auto;
+}
+
 .slideshow img {
     width: 70vw;
     height: auto;
-    margin:auto;
 }
 
 .header ul{

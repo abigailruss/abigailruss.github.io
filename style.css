@@ -1,6 +1,18 @@
+ul{
+    list-style-type: circle;
+}
+ol{
+    list-style-type: upper-roman;
+}
 h1 {
+    color: #882441;
+    font-size: 36px;
+}
+h1.enter{
     color: #33485e;
     font-size: 36px;
+    font-family: 'Petit Formal Script', cursive;
+    white-space: nowrap;
 }
 
 .crop img{
@@ -26,6 +38,7 @@ p {
 .slideshow{
     width:70vw;
     margin:auto;
+    display: block;
 }
 
 .slideshow img {
@@ -47,4 +60,65 @@ p {
 .header li::after{
     content: "|";
     margin-left: 10px;
+}
+h2{
+    color: #00597F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+p{
+    font-family: 'Libre Baskerville', serif;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-decoration: underline 1px solid;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+div#color-palette{
+    background-color: white;
+    border: 2px black solid;
+    padding: 10px;
+}
+.color-1{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: #882441;
+}
+.color-2{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: #BAB1AD;
+}
+.color-3{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: #00597F;
+}
+.color-4{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: #D4CEC9;
+}
+.color-5{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background-color: #CDAEA6;
 }

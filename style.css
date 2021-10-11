@@ -124,5 +124,6 @@ div#color-palette{
 }
 #wireframe img{
     width: 300px;
+    height: auto;
     margin: 15px;
 }

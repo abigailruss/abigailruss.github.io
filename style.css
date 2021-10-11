@@ -123,7 +123,7 @@ div#color-palette{
     background-color: #CDAEA6;
 }
 #wireframe img{
-    width: 300px;
+    max-width: 300px;
     height: auto;
     margin: 15px;
 }

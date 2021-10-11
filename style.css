@@ -122,3 +122,7 @@ div#color-palette{
     display: inline-block;
     background-color: #CDAEA6;
 }
+#wireframe img{
+    width: 300px;
+    margin: 15px;
+}

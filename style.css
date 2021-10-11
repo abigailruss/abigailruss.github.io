@@ -1,8 +1,11 @@
 ul{
     list-style-type: circle;
+    font-family: 'Libre Baskerville', serif}
 }
+
 ol{
     list-style-type: upper-roman;
+    font-family: 'Libre Baskerville', serif;
 }
 h1 {
     color: #882441;

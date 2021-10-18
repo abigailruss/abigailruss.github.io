@@ -73,16 +73,16 @@ body { margin:0;}
   p{
       font-family: 'Libre Baskerville', serif;
   }
-.clip1{
+/* .clip1{
     display: flex;
 }
 .clip1 .left{
     justify-content: left;
-    flex-wrap: 3;
+    flex-grow: 3;
     margin-right: 20px;
 }
 .clip1 #mentalhealth{
-    flex-wrap: 1;
+    flex-grow: 1;
     width: 30%;
 }
 .clip2{
@@ -90,11 +90,11 @@ body { margin:0;}
 }
 .clip2 .left{
     justify-content: left;
-    flex-wrap: 3;
+    flex-grow: 3;
     margin-right: 20px;
 }
 .clip2 #greentidings{
-    flex-wrap: 1;
+    flex-grow: 1;
     width: 20%;
 }
 .clip3{
@@ -102,10 +102,26 @@ body { margin:0;}
 }
 .clip3 .left{
     justify-content: left;
-    flex-wrap: 3;
+    flex-grow: 3;
     margin-right: 20px;
 }
 .clip3 #zebras{
-    flex-wrap: 1;
+    flex-grow: 1;
     width: 20%;
+} */
+
+.clip {
+    display: flex;
+    gap: 15px;
+}
+
+.clip .left {
+    flex-grow: 3;
+}
+.clip .right{
+    flex-grow: 1;
+}
+.clip .right img{
+    width: 100%;
+    min-width: 300px;
 }

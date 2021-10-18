@@ -57,7 +57,14 @@ body { margin:0;}
      width: 100%;
      height: auto;
   }
-
+  .body-text{
+      margin: 10px 20px 10px 20px;
+  }
+  h1{
+      color: #00597F;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+  }
   h2{
       color: #00597F;
       font-family: 'Montserrat', sans-serif;
@@ -66,3 +73,7 @@ body { margin:0;}
   p{
       font-family: 'Libre Baskerville', serif;
   }
+.clip1{
+    display: block;
+    justify-content: left;
+}

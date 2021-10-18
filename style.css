@@ -85,6 +85,9 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.logo img{
+    float: right;
+}
 .page-name{
     font-size: 10vw;
     font-family: 'Libre Baskerville', serif;

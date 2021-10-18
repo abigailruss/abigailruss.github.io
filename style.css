@@ -12,23 +12,10 @@ h1 {
     font-size: 36px;
 }
 h1.enter{
-    color: #33485e;
-    font-size: 36px;
-    font-family: 'Petit Formal Script', cursive;
-    white-space: nowrap;
-}
-
-.crop img{
-    width:100vw;
-    height: auto;
-    }
-.name-text h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 130px;
+    font-size: 10vw;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
+    color: #882441;
 }
 p {
     margin: 16px 16px 16px 16px;
@@ -71,8 +58,26 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.header-greenbrier{
+    background-image: url("abby-greenbrier.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header-resume{
+    background-image: url("Russ_Abigail.JPG");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .page-name{
-    font-size: 100px;
+    font-size: 10vw;
     font-family: 'Libre Baskerville', serif;
     text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
     color: #882441;
@@ -81,7 +86,7 @@ p {
 }
 .motto{
     font-family: 'Libre Baskerville', serif;
-    font-size: 50px;
+    font-size: 5vw;
     text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
     color: #882441;
 

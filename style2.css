@@ -17,8 +17,13 @@ body { margin:0;}
     font-size: 5vw;
     font-family: 'Petit Formal Script';
     color: white;
-
   }
+ /*.motto{
+     text-align: center;
+     font-size: 2vw;
+     font-family: 'Libre Baskerville', serif;
+     color: white;
+  }*/
 .container {
     display: flex;
     flex-direction: row;
@@ -43,7 +48,6 @@ body { margin:0;}
 .logo {
     float: left;
     width: 100px;
-
   }
   .full-width{
     width: 100%;
@@ -53,7 +57,7 @@ body { margin:0;}
   h2{
       color: #00597F;
       font-family: 'Montserrat', sans-serif;
-      font-weight: lighter;
+      font-weight: normal;
   }
   p{
       font-family: 'Libre Baskerville', serif;

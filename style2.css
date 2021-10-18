@@ -1,11 +1,17 @@
+body { margin:0;}
 .flexbox-container{
         display: flex;
         align-items: baseline;
         justify-content: center;
     }
 .header {
-    background-color: #00597F;
+    display: flex;
+
+    background-color: #CDAEA6;
       }
+.header-content{
+    flex-grow: 3;
+}
 .name {
     text-align: center;
     font-size: 5vw;
@@ -36,5 +42,18 @@
   }
 .logo {
     float: left;
-    width: 14.5vw;
+    width: 100px;
+
+  }
+  .full-width{
+    width: 100%;
+  }
+
+  h2{
+      color: #00597F;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: lighter;
+  }
+  p{
+      font-family: 'Libre Baskerville', serif;
   }

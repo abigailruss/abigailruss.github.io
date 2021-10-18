@@ -1,0 +1,39 @@
+.header{
+}
+.flexbox-container{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+.header {
+    background-color: lightblue;
+      }
+.name {
+    text-align: center;
+    font-size: 3vw;
+  }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+.container div {
+    border: thin black solid;
+    width: fit-content;
+    padding: 10px;
+    height: 20px;
+  }
+.container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.5vw;
+    width: fit-content;
+  }
+  .link {
+    padding: 0 10px 0 10px;
+  }
+.logo {
+    float: left;
+    width: 14.5vw;
+  }

@@ -74,6 +74,38 @@ body { margin:0;}
       font-family: 'Libre Baskerville', serif;
   }
 .clip1{
-    display: block;
+    display: flex;
+}
+.clip1 .left{
     justify-content: left;
+    flex-wrap: 3;
+    margin-right: 20px;
+}
+.clip1 #mentalhealth{
+    flex-wrap: 1;
+    width: 30%;
+}
+.clip2{
+    display: flex;
+}
+.clip2 .left{
+    justify-content: left;
+    flex-wrap: 3;
+    margin-right: 20px;
+}
+.clip2 #greentidings{
+    flex-wrap: 1;
+    width: 20%;
+}
+.clip3{
+    display: flex;
+}
+.clip3 .left{
+    justify-content: left;
+    flex-wrap: 3;
+    margin-right: 20px;
+}
+.clip3 #zebras{
+    flex-wrap: 1;
+    width: 20%;
 }

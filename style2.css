@@ -1,16 +1,17 @@
-.header{
-}
 .flexbox-container{
         display: flex;
         align-items: baseline;
         justify-content: center;
     }
 .header {
-    background-color: lightblue;
+    background-color: #00597F;
       }
 .name {
     text-align: center;
-    font-size: 3vw;
+    font-size: 5vw;
+    font-family: 'Petit Formal Script';
+    color: white;
+
   }
 .container {
     display: flex;

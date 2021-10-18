@@ -37,7 +37,7 @@ body { margin:0;}
     font-size: 1.5vw;
     width: fit-content;
   }
-  .link {
+ .link {
     padding: 0 10px 0 10px;
   }
 .logo {
@@ -47,6 +47,7 @@ body { margin:0;}
   }
   .full-width{
     width: 100%;
+    height: auto;
   }
 
   h2{

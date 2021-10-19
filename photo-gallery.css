@@ -73,6 +73,10 @@ header p {
     margin-bottom: 20px;
     width: 23.2456140351%;
     position: relative;
+    transition: all 0.4s;
+}
+.gallery ul li:hover {
+    filter: drop-shadow(0 0 0.75rem #CDAEA6);
 }
 .gallery ul li a {
     display: block;

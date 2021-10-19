@@ -44,10 +44,11 @@ body { margin:0;}
   }
  .link {
     padding: 0 10px 0 10px;
+    font-family: 'Montserrat', sans-serif;
   }
 .logo {
     float: left;
-    width: 100px;
+    width: 120px;
     align-self: center;
   }
   .full-width{

@@ -16,13 +16,14 @@ a:clicked {
     color: ;
 }
 a:hover{
-        
+
 }
-.name {
+.name p{
     text-align: center;
     font-size: 5vw;
     font-family: 'Petit Formal Script';
     color: white;
+
   }
  /*.motto{
      text-align: center;
@@ -47,6 +48,7 @@ a:hover{
     list-style: none;
     font-size: 1.5vw;
     width: fit-content;
+    padding-left: 0;
   }
  .link {
     padding: 0 10px 0 10px;
@@ -132,4 +134,9 @@ a:hover{
 } */
 .clip .right img{
     width: 300px;
+}
+@media screen and (max-width: 1704px){
+    .header{
+        
+    }
 }

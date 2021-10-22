@@ -1,195 +1,209 @@
-
-body { margin:0;}
-
-ul{
-    list-style-type: circle;
-    font-family: 'Libre Baskerville', serif;
+body {
+  min-width: 700px;
+  margin: auto;
 }
 
-ol{
-    list-style-type: upper-roman;
-    font-family: 'Libre Baskerville', serif;
+.flexbox-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
+.header {
+  background-color: #cdaea6;
+  min-height: 156px;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.logo {
+  float: left;
+  width: 120px;
+  z-index: 2;
+}
+.name {
+  font-family: "Petit Formal Script";
+  color: white;
+  text-align: center;
+  font-size: min(max(50px, 5vw), 75px);
+  line-height: 0;
+  flex-grow: 1;
+}
+.link-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: 30px;
+  border-top: thin white solid;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.link-row ul {
+  list-style: none;
+  font-size: max(1.5vw, 14px);
+  text-align: end;
+
+  min-width: 27%;
+  flex-grow: 0;
+}
+.link-row li {
+  display: inline-block;
+  line-height: 0;
+  margin-left: 0;
+}
+
+.link-row .wider {
+  flex-grow: 1;
+}
+
+.link-row a:hover {
+  color: #cccccc;
+  background-color: #7e7e7e;
+}
+.link-row a:active,
+.link-row a:visited,
+.link-row a:link {
+  color: white;
+}
+.fa-twitter {
+  color: #1da1f2;
+  font-size: max(1.5vw, 20px);
+}
+.fa-twitter:hover {
+  color: white;
+  font-size: max(1.5vw, 20px);
+}
+.fa-linkedin {
+  color: #0077b5;
+  font-size: max(1.5vw, 20px);
+}
+.fa-linkedin:hover {
+  color: white;
+  font-size: max(1.5vw, 20px);
+}
+.fa-envelope {
+  font-size: max(1.5vw, 20px);
+}
+.fa-envelope:hover {
+  color: black;
+  font-size: max(1.5vw, 20px);
+}
+
+.full-width {
+  width: 100%;
+  background-color: #cdaea6;
+}
+.full-width img {
+  display: block;
+  width: min(100%, 1300px);
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.5vw;
+  width: fit-content;
+  padding-left: 0;
+}
+.link {
+  padding: 0 10px 0 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slideshow {
+  width: 100%;
+  height: auto;
+}
+
+.body-text {
+  margin: 20px 40px 20px 40px;
+}
+
 h1 {
-    color: #882441;
-    font-size: 36px;
+  color: #00597f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
 }
-h1.enter{
-    font-size: 10vw;
-    font-family: 'Libre Baskerville', serif;
-    text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
-    color: #882441;
+h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  background-color: #cdaea6;
 }
 p {
-    margin: 16px 16px 16px 16px;
-    border-left: 15px;
-    border-right: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+  font-family: "Libre Baskerville", serif;
 }
-
-.slideshow{
-    width:70vw;
-    margin:auto;
-    display: block;
-}
-
-.slideshow img {
-    width: 70vw;
-    height: auto;
-}
-.flex-header{
+/* .clip1{
     display: flex;
-    width: 100%;
-
 }
-.header{
-    display: flex;
+.clip1 .left{
+    justify-content: left;
+    flex-grow: 3;
+    margin-right: 20px;
+}
+.clip1 #mentalhealth{
     flex-grow: 1;
-    justify-content: center;
-    align-content: flex-end;
-    text-align: center;
-    flex-direction: column;
-
+    width: 30%;
 }
-.header-patch{
-    background-image: url("arpatch.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-.header-greenbrier{
-    background-image: url("abby-greenbrier.JPG");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-.header-resume{
-    background-image: url("Russ_Abigail.JPG");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-.header-portfolio{
-    background-image: url("aor-portfolio.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-.logo img{
-    float: right;
-}
-.page-name{
-    font-size: 10vw;
-    font-family: 'Libre Baskerville', serif;
-    text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
-    color: #882441;
-
-
-}
-.motto{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 5vw;
-    text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
-    color: #882441;
-
-}
-.header ul{
-    list-style-type: none;
-    width: 100%;
-    overflow: hidden;
-    text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
-    color: #882441;
-    font-size: 20px;
-}
-.links{
+.clip2{
     display: flex;
-    flex-direction: row;
-    padding-right: 5px;
-    padding-left: 5px;
-    text-shadow: 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4, 0 0 3px #F6DCE4;
-    font-size: 20px;
-    justify-content: center;
 }
-.links ::after{
-    content: "|";
-    margin-left: 10px;
+.clip2 .left{
+    justify-content: left;
+    flex-grow: 3;
+    margin-right: 20px;
 }
-h2{
-    color: #00597F;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+.clip2 #greentidings{
+    flex-grow: 1;
+    width: 20%;
 }
-p{
-    font-family: 'Libre Baskerville', serif;
+.clip3{
+    display: flex;
 }
-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    text-decoration: underline 1px solid;
+.clip3 .left{
+    justify-content: left;
+    flex-grow: 3;
+    margin-right: 20px;
 }
-h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+.clip3 #zebras{
+    flex-grow: 1;
+    width: 20%;
+} */
+
+.clip {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
 }
-h5{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: italic;
+
+.clip .left {
+  flex-grow: 3;
 }
-h6{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+/* .clip .right{
+    flex-grow: 1;
+} */
+.clip .right img {
+  width: 300px;
 }
-div#color-palette{
-    background-color: white;
-    border: 2px black solid;
-    padding: 10px;
+
+.clip a:active,
+.clip a:visited,
+.clip a:link {
+  color: black;
 }
-.color-1{
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-    background-color: #882441;
+.clip a:hover{
+    color: #00597f;
 }
-.color-2{
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-    background-color: #BAB1AD;
-}
-.color-3{
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-    background-color: #00597F;
-}
-.color-4{
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-    background-color: #D4CEC9;
-}
-.color-5{
-    height: 150px;
-    width: 150px;
-    display: inline-block;
-    background-color: #CDAEA6;
-}
-#wireframe img{
-    max-width: 300px;
-    height: auto;
-    margin: 15px;
+@media screen and (max-width: 1704px) {
+  .header {
+  }
 }

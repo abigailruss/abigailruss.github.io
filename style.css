@@ -1,5 +1,5 @@
 body {
-  min-width: 700px;
+  /* min-width: 700px; */
   margin: auto;
 }
 
@@ -139,6 +139,15 @@ h2 {
   font-weight: normal;
   background-color: #cdaea6;
 }
+h3{
+
+}
+h4{
+
+}
+h5{
+    
+}
 p {
   font-family: "Libre Baskerville", serif;
 }
@@ -184,6 +193,17 @@ p {
   gap: 15px;
   justify-content: space-between;
 }
+@media screen and (max-width: 750px){
+    .clip{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .clip .left{
+        padding-bottom:
+    }
+}
+
 
 .clip .left {
   flex-grow: 3;

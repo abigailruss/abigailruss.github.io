@@ -1,5 +1,4 @@
 body {
-  /* min-width: 700px;  */
   margin: auto;
 }
 
@@ -10,23 +9,55 @@ body {
 }
 .header {
   background-color: #cdaea6;
-  min-height: 156px;
+  display: flex;
+  flex-direction: column;
+}
+.header-row1 {
+  display: flex;
+  align-items: stretch;
+}
+.header-row1 img {
+  width: 120px;
+  flex-grow: 0;
+}
+.header-row1 p {
+  flex-grow: 1;
+  background-color: blueviolet;
+  line-height: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header-row1 span {
+  width: 120px;
+  flex-grow: 0;
 }
 .header-content {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.logo {
-  float: left;
-  width: 120px;
-  z-index: 2;
+@media only screen and (max-width: 600px) {
+  .logo {
+    max-height: 20vw;
+    object-fit: contain;
+  }
+  .header-row1 span {
+    width: 0px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .logo {
+    width: 120px;
+  }
+  .header-row1 span {
+    width: 120px;
+  }
 }
 .name {
   font-family: "Petit Formal Script";
   color: white;
   text-align: center;
-  font-size: min(max(50px, 5vw), 75px);
+  font-size: min(max(40px, 6vw), 200px);
   line-height: 0;
   flex-grow: 1;
 }
@@ -34,27 +65,35 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  color: 30px;
   border-top: thin white solid;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding: 5px 0 5px 0;
 }
 .link-row ul {
-  list-style: none;
-  font-size: max(1.5vw, 14px);
-  text-align: end;
-
-  min-width: 27%;
-  flex-grow: 0;
+  font-size: max(1.5vw, 10px);
+  margin: 0;
+  padding: 0;
 }
 .link-row li {
-  display: inline-block;
+  display: inline;
   line-height: 0;
-  margin-left: 0;
+  margin: 0 5px 0 5px;
+  padding: 0;
 }
 
 .link-row .wider {
   flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-row .narrow {
+  width: 120px;
+  flex-grow: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-row a {
+  text-decoration: none;
 }
 
 .link-row a:hover {
@@ -68,26 +107,21 @@ body {
 }
 .fa-twitter {
   color: #1da1f2;
-  font-size: max(1.5vw, 20px);
 }
 .fa-twitter:hover {
   color: white;
-  font-size: max(1.5vw, 20px);
 }
 .fa-linkedin {
   color: #0077b5;
-  font-size: max(1.5vw, 20px);
 }
 .fa-linkedin:hover {
   color: white;
-  font-size: max(1.5vw, 20px);
 }
 .fa-envelope {
-  font-size: max(1.5vw, 20px);
+  color: white;
 }
 .fa-envelope:hover {
   color: black;
-  font-size: max(1.5vw, 20px);
 }
 
 .full-width {
@@ -110,15 +144,23 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
-  font-size: 1.5vw;
-  width: fit-content;
   padding-left: 0;
 }
 .link {
-  padding: 0 10px 0 10px;
+  padding: 0 5px 0 5px;
   font-family: "Montserrat", sans-serif;
 }
-
+.link-row span {
+  color: white;
+  width: 120px;
+  margin: 0;
+}
+.link-row ul:last {
+  background-color: black;
+  color: white;
+  width: 120px;
+  margin: 0;
+}
 .slideshow {
   width: 100%;
   height: auto;
@@ -151,42 +193,6 @@ h5{
 p {
   font-family: "Libre Baskerville", serif;
 }
-/* .clip1{
-    display: flex;
-}
-.clip1 .left{
-    justify-content: left;
-    flex-grow: 3;
-    margin-right: 20px;
-}
-.clip1 #mentalhealth{
-    flex-grow: 1;
-    width: 30%;
-}
-.clip2{
-    display: flex;
-}
-.clip2 .left{
-    justify-content: left;
-    flex-grow: 3;
-    margin-right: 20px;
-}
-.clip2 #greentidings{
-    flex-grow: 1;
-    width: 20%;
-}
-.clip3{
-    display: flex;
-}
-.clip3 .left{
-    justify-content: left;
-    flex-grow: 3;
-    margin-right: 20px;
-}
-.clip3 #zebras{
-    flex-grow: 1;
-    width: 20%;
-} */
 
 .clip {
   display: flex;
@@ -204,13 +210,10 @@ p {
     }
 }
 
-
 .clip .left {
   flex-grow: 3;
 }
-/* .clip .right{
-    flex-grow: 1;
-} */
+
 .clip .right img {
   width: 300px;
 }
@@ -222,8 +225,4 @@ p {
 }
 .clip a:hover{
     color: #00597f;
-}
-@media screen and (max-width: 1704px) {
-  .header {
-  }
 }

@@ -38,7 +38,6 @@ footer {
   color: white;
   text-align: center;
   font-size: min(6vw, 100px);
-
   margin: 10px 0 0 0;
 }
 
@@ -82,7 +81,6 @@ footer {
   }
   .link-row .narrow {
     flex-grow: 0;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -176,12 +174,6 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 .link-row span {
-  color: white;
-  width: 120px;
-  margin: 0;
-}
-.link-row ul:last {
-  background-color: black;
   color: white;
   width: 120px;
   margin: 0;
@@ -285,11 +277,6 @@ h4{
     font-weight: normal;
     color: black;
 }
-h5{
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    color: #00597f;
-}
 p {
   font-family: "Libre Baskerville", serif;
 }
@@ -310,9 +297,6 @@ p {
         flex-direction: column-reverse;
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-    .clip .left{
-        padding-bottom:
     }
 }
 

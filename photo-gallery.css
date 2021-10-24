@@ -8,12 +8,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body {
+/*body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     line-height: 1.5;
     color: #333;
-}
+}*/
 a {
     color: #fff;
 }

@@ -22,15 +22,11 @@ body {
 }
 .header-row1 p {
   flex-grow: 1;
-  background-color: blueviolet;
   line-height: 0;
   margin-top: auto;
   margin-bottom: auto;
 }
-.header-row1 span {
-  width: 120px;
-  flex-grow: 0;
-}
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -38,26 +34,43 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .logo {
-    max-height: 20vw;
+    height: min(15vw, 120px);
     object-fit: contain;
   }
-  .header-row1 span {
-    width: 0px;
+  .headers span {
+    width: min(10vw,120px);
+  }
+
+  .link-row .narrow {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+    align-items: center;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .logo {
-    width: 120px;
+    height: min(15vw, 120px);
+    object-fit: contain;
+    margin: 10px;
   }
   .header-row1 span {
-    width: 120px;
+    width: min(10vw, 120px);
+  }
+  .link-row .narrow {
+    width: min(5vw, 120px);
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
   }
 }
 .name {
   font-family: "Petit Formal Script";
   color: white;
   text-align: center;
-  font-size: min(max(40px, 6vw), 200px);
+  font-size: min(8vw, 100px);
   line-height: 0;
   flex-grow: 1;
 }
@@ -66,10 +79,10 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   border-top: thin white solid;
-  padding-top: 5px 0 5px 0;
+  padding-top: 10px 0 10px 0;
 }
 .link-row ul {
-  font-size: max(1.5vw, 10px);
+  font-size: max(1.5vw, 14px);
   margin: 0;
   padding: 0;
 }
@@ -85,13 +98,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.link-row .narrow {
-  width: 120px;
-  flex-grow: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+
 
 .link-row a {
   text-decoration: none;

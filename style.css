@@ -1,13 +1,5 @@
 body {
-  margin: 0;
-}
-
-footer {
-  padding: 20px 40px 20px 40px;
-  text-align: right;
-  background-color: #cdaea6;
-  color: white;
-  font-family: "Montserrat", sans-serif;
+  margin: auto;
 }
 
 .flexbox-container {
@@ -188,6 +180,74 @@ footer {
   margin: 20px 40px 20px 40px;
 }
 
+.job p{
+    margin-left: 20px;
+}
+.job h3{
+    margin-bottom: 0;
+}
+.education h3{
+    display: inline;
+    text-align: left;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.job h4 {
+    display: inline;
+    text-align: left;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #882441;
+    font-weight: bold;
+}
+.job .right, .education .right{
+    display: inline;
+    float: right;
+    text-align: right;
+    margin-left: 0;
+    color: #882441;
+    font-weight: normal;
+}
+.job hr, .experience hr, .education hr{
+    clear: both;
+    visibility: hidden;
+}
+.experience li, .education li, .skills li{
+    font-family: "Libre Baskerville", serif;
+    list-style-type: circle;
+}
+.experience h3{
+    display: inline;
+    text-align: left;
+    float: left;
+    margin-bottom: 0;
+}
+.experience .title{
+    font-weight: bold;
+}
+.experience h4{
+    display: inline;
+    float: right;
+    text-align: right;
+    margin-bottom: 0;
+    color: #882441;
+}
+.skills{
+    font-family: "Libre Baskerville", serif;
+}
+.technicalskills{
+    display: flex;
+    flex-direction: row;
+}
+.technicalskills div{
+    flex-grow: 1;
+}
+.skills h3{
+    margin-top: 0;
+}
 h1 {
   color: #00597f;
   font-family: "Montserrat", sans-serif;
@@ -198,24 +258,37 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   background-color: #cdaea6;
+  padding-left: 10px;
 }
 h3{
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: #00597f;
 }
 h4{
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: black;
 }
 h5{
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: #00597f;
 }
 p {
   font-family: "Libre Baskerville", serif;
 }
-
+.edu {
+    margin-left: 15px;
+    float: left;
+}
 .clip {
   display: flex;
   gap: 15px;
   justify-content: space-between;
+}
+.skills p{
+    margin-left: 15px;
 }
 @media screen and (max-width: 750px){
     .clip{

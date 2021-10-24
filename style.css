@@ -26,11 +26,27 @@ footer {
   width: 120px;
   flex-grow: 0;
 }
-.header-row1 p {
+
+.header .wider{
   flex-grow: 1;
-  line-height: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+}
+.header-row1 p {
+  text-align: center;
+}
+.name {
+  font-family: "Petit Formal Script";
+  color: white;
+  text-align: center;
+  font-size: min(6vw, 100px);
+
+  margin: 10px 0 0 0;
+}
+
+.journalist{
+  font-family: "Montserrat";
+  color: white;
+  margin: 0px;
+  font-size: min(3vw, 50px);
 }
 
 .header-content {
@@ -73,14 +89,7 @@ footer {
     gap:2vw;
   }
 }
-.name {
-  font-family: "Petit Formal Script";
-  color: white;
-  text-align: center;
-  font-size: min(8vw, 100px);
-  line-height: 0;
-  flex-grow: 1;
-}
+
 .link-row {
   display: flex;
   flex-direction: row;

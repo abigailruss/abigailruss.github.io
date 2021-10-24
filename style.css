@@ -43,7 +43,6 @@ body {
 
   .link-row .narrow {
     flex-grow: 0;
-    flex-shrink: 1;
     display: flex;
     justify-content: flex-end;
     gap: 2vw;
@@ -60,10 +59,12 @@ body {
     width: min(10vw, 120px);
   }
   .link-row .narrow {
-    width: min(5vw, 120px);
     flex-grow: 0;
+
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    gap:2vw;
   }
 }
 .name {
@@ -79,7 +80,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   border-top: thin white solid;
-  padding-top: 10px 0 10px 0;
+  padding: 10px 10px 10px 0;
 }
 .link-row ul {
   font-size: max(1.5vw, 14px);

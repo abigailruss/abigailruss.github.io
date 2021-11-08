@@ -292,7 +292,19 @@ p {
 .skills p{
     margin-left: 15px;
 }
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
 @media screen and (max-width: 750px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
     .clip{
         flex-direction: column-reverse;
         margin-top: 20px;
